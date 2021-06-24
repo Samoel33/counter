@@ -18,8 +18,15 @@ body {
 }
 
 .counter-container {
-    background-color: blanchedalmond;
+    width: 50%;
+    height: 50vh;
+    background-color: rgba(255, 255, 255, 0.537);
     border: 2px solid black;
+}
+
+.digits-container {
+    width: 100%;
+    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,8 +35,8 @@ body {
 .counter-digit-1,
 .counter-digit-2,
 .counter-digit-3 {
-    height: 5rem;
-    width: 5rem;
+    height: 10rem;
+    width: 10rem;
     border-radius: 0.1rem;
     box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.7);
 }
