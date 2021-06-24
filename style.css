@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: sans-serif;
+    font-size: 62.5%;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: azure;
+    margin: 3rem auto;
+}
+
+.counter-container {
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter-digit-1,
+.counter-digit-2,
+.counter-digit-3 {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 0.1rem;
+    box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.7);
+}
