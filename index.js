@@ -15,6 +15,87 @@ var value3 = 0;
 
 buton.addEventListener('click', () => {
     count();
+    if (digit_1.innerHTML == 1 && digit_2.innerHTML == 0 && digit_3.innerHTML == 0) {
+        body.classList.toggle('hundred');
+        para.classList.toggle('celebrate');
+        para.innerHTML = 'ONE HUNDRED';
+        if (digit_1.innerHTML == 0 && digit_2.innerHTML == 0 && digit_3.innerHTML == 0) {
+            digit_3.innerHTML = `${value}`;
+            digit_2.innerHTML = `${value1}`;
+            digit_1.innerHTML = `${value3}`;
+        }
+
+    } else {
+        if (digit_1.innerHTML == 1 && digit_2.innerHTML == 0 && digit_3.innerHTML == 1) {
+            body.classList.toggle('hundred');
+            para.classList.toggle('celebrate');
+        }
+    }
+    if (digit_1.innerHTML == 2 && digit_2.innerHTML == 0 && digit_3.innerHTML == 0) {
+        body.classList.toggle('hundred');
+        para.classList.toggle('celebrate');
+        para.innerHTML = 'TWO HUNDRED';
+        if (digit_1.innerHTML == 0 && digit_2.innerHTML == 0 && digit_3.innerHTML == 0) {
+            digit_3.innerHTML = `${value}`;
+            digit_2.innerHTML = `${value1}`;
+            digit_1.innerHTML = `${value3}`;
+        }
+
+    } else {
+        if (digit_1.innerHTML == 2 && digit_2.innerHTML == 0 && digit_3.innerHTML == 1) {
+            body.classList.toggle('hundred');
+            para.classList.toggle('celebrate');
+        }
+    }
+    if (digit_1.innerHTML == 3 && digit_2.innerHTML == 0 && digit_3.innerHTML == 0) {
+        body.classList.toggle('hundred');
+        para.classList.toggle('celebrate');
+        para.innerHTML = 'THREE HUNDRED';
+        if (digit_1.innerHTML == 0 && digit_2.innerHTML == 0 && digit_3.innerHTML == 0) {
+            digit_3.innerHTML = `${value}`;
+            digit_2.innerHTML = `${value1}`;
+            digit_1.innerHTML = `${value3}`;
+        }
+
+    } else {
+        if (digit_1.innerHTML == 3 && digit_2.innerHTML == 0 && digit_3.innerHTML == 1) {
+            body.classList.toggle('hundred');
+            para.classList.toggle('celebrate');
+        }
+    }
+    if (digit_1.innerHTML == 4 && digit_2.innerHTML == 0 && digit_3.innerHTML == 0) {
+        body.classList.toggle('hundred');
+        para.classList.toggle('celebrate');
+        para.innerHTML = 'FOUR HUNDRED';
+        if (digit_1.innerHTML == 0 && digit_2.innerHTML == 0 && digit_3.innerHTML == 0) {
+            digit_3.innerHTML = `${value}`;
+            digit_2.innerHTML = `${value1}`;
+            digit_1.innerHTML = `${value3}`;
+        }
+
+    } else {
+        if (digit_1.innerHTML == 4 && digit_2.innerHTML == 0 && digit_3.innerHTML == 1) {
+            body.classList.toggle('hundred');
+            para.classList.toggle('celebrate');
+        }
+    }
+    if (digit_1.innerHTML == 5 && digit_2.innerHTML == 0 && digit_3.innerHTML == 0) {
+        body.classList.toggle('hundred');
+        para.classList.toggle('celebrate');
+        para.innerHTML = 'FIVE HUNDRED';
+        if (digit_1.innerHTML == 0 && digit_2.innerHTML == 0 && digit_3.innerHTML == 0) {
+            digit_3.innerHTML = `${value}`;
+            digit_2.innerHTML = `${value1}`;
+            digit_1.innerHTML = `${value3}`;
+        }
+
+    } else {
+        if (digit_1.innerHTML == 5 && digit_2.innerHTML == 0 && digit_3.innerHTML == 1) {
+            body.classList.toggle('hundred');
+            para.classList.toggle('celebrate');
+        }
+    }
+
 
 });
 reset.addEventListener('click', () => {
@@ -28,61 +109,6 @@ reset.addEventListener('click', () => {
 })
 
 function count() {
-    if (digit_1.innerHTML == 1 && digit_2.innerHTML == 0 && digit_3.innerHTML == 0) {
-        body.classList.toggle('hundred');
-        para.classList.toggle('celebrate');
-        para.innerHTML = 'ONE HUNDRED';
-        if (digit_1.innerHTML == 0 && digit_2.innerHTML == 0 && digit_3.innerHTML == 0) {
-            digit_3.innerHTML = `${value}`;
-            digit_2.innerHTML = `${value1}`;
-            digit_1.innerHTML = `${value3}`;
-        }
-
-    }
-    if (digit_1.innerHTML == 2 && digit_2.innerHTML == 0 && digit_3.innerHTML == 0) {
-        body.classList.toggle('hundred');
-        para.classList.toggle('celebrate');
-        para.innerHTML = 'TWO HUNDRED';
-        if (digit_1.innerHTML == 0 && digit_2.innerHTML == 0 && digit_3.innerHTML == 0) {
-            digit_3.innerHTML = `${value}`;
-            digit_2.innerHTML = `${value1}`;
-            digit_1.innerHTML = `${value3}`;
-        }
-
-    }
-    if (digit_1.innerHTML == 3 && digit_2.innerHTML == 0 && digit_3.innerHTML == 0) {
-        body.classList.toggle('hundred');
-        para.classList.toggle('celebrate');
-        para.innerHTML = 'THREE HUNDRED';
-        if (digit_1.innerHTML == 0 && digit_2.innerHTML == 0 && digit_3.innerHTML == 0) {
-            digit_3.innerHTML = `${value}`;
-            digit_2.innerHTML = `${value1}`;
-            digit_1.innerHTML = `${value3}`;
-        }
-
-    }
-    if (digit_1.innerHTML == 4 && digit_2.innerHTML == 0 && digit_3.innerHTML == 0) {
-        body.classList.toggle('hundred');
-        para.classList.toggle('celebrate');
-        para.innerHTML = 'FOUR HUNDRED';
-        if (digit_1.innerHTML == 0 && digit_2.innerHTML == 0 && digit_3.innerHTML == 0) {
-            digit_3.innerHTML = `${value}`;
-            digit_2.innerHTML = `${value1}`;
-            digit_1.innerHTML = `${value3}`;
-        }
-
-    }
-    if (digit_1.innerHTML == 5 && digit_2.innerHTML == 0 && digit_3.innerHTML == 0) {
-        body.classList.toggle('hundred');
-        para.classList.toggle('celebrate');
-        para.innerHTML = 'FIVE HUNDRED';
-        if (digit_1.innerHTML == 0 && digit_2.innerHTML == 0 && digit_3.innerHTML == 0) {
-            digit_3.innerHTML = `${value}`;
-            digit_2.innerHTML = `${value1}`;
-            digit_1.innerHTML = `${value3}`;
-        }
-
-    }
     if (value3 != 9) {
         if (value <= 9 || digit_3.innerHTML == 0) {
             value = value + 1;
