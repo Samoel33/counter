@@ -33,7 +33,8 @@ h1 {
     text-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.7);
 }
 
-.start-count {
+.start-count,
+.reset-count {
     border: none;
     background-color: brown;
     color: white;
@@ -65,4 +66,89 @@ h1 {
     width: 10rem;
     border-radius: 0.1rem;
     box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.7);
+}
+
+.hundred {
+    animation-name: hundred;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transition: all 8s ease-in-out;
+}
+
+@keyframes hundred {
+    0% {
+        background-color: brown;
+    }
+    20% {
+        background-color: gold;
+    }
+    40% {
+        background-color: coral;
+    }
+    60% {
+        background-color: rgba(192, 192, 192, 0.762);
+    }
+    80% {
+        background-color: rgba(153, 205, 50, 0.809);
+    }
+    100% {
+        background-color: rgba(218, 165, 32, 0.775);
+    }
+}
+
+.hundred1 {
+    transform: translate(-100%, -300%);
+    font-size: 4rem;
+    font-weight: 900;
+    color: blue;
+    position: relative;
+    z-index: 20;
+    opacity: 1;
+    transition: all 8s ease-in-out;
+}
+
+.celebrate {
+    animation-name: show_text;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transition: all 8s ease-in-out;
+}
+
+@keyframes show_text {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+        width: 10%;
+        color: rgba(218, 165, 32, 0.775);
+    }
+    20% {
+        transform: translate(0, 50vh);
+        opacity: 1;
+        width: 10%;
+        color: rgba(153, 205, 50, 0.809);
+    }
+    40% {
+        transform: translate(40%, 0);
+        opacity: 1;
+        width: 10%;
+        color: rgba(192, 192, 192, 0.762);
+    }
+    60% {
+        transform: translate(60%, 50vh);
+        opacity: 1;
+        width: 10%;
+        color: coral;
+    }
+    80% {
+        transform: translate(80%, 0);
+        opacity: 1;
+        width: 10%;
+        color: gold;
+    }
+    100% {
+        transform: translate(100%, 50vh);
+        opacity: 1;
+        width: 10%;
+        color: brown;
+    }
 }
